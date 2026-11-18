@@ -1,0 +1,834 @@
+{
+ "version": 1,
+ "updated": "2026-09-26",
+ "world": {
+  "x": -40,
+  "y": -10,
+  "w": 1840,
+  "h": 860
+ },
+ "domains": {
+  "origin": {
+   "label": "Origin",
+   "genus": "fr",
+   "region": "TERROIR · 부르고뉴",
+   "cx": 900
+  }
+ },
+ "ranks": {
+  "G": [
+   "나라",
+   "Country"
+  ],
+  "S": [
+   "지역",
+   "Region"
+  ],
+  "V": [
+   "하위 지역",
+   "Sub-region"
+  ],
+  "L": [
+   "아펠라시옹",
+   "Appellation"
+  ],
+  "C": [
+   "클리마",
+   "Climat"
+  ]
+ },
+ "note": "공개 자료로 확인한 사실만 담았습니다. 좌표는 대략값이고 밭 단위 토양은 확인 전입니다.",
+ "nodes": [
+  {
+   "id": "fr",
+   "name": "프랑스",
+   "rank": "G",
+   "domain": "origin",
+   "x": 900,
+   "y": 40,
+   "parents": [],
+   "lat": 46.6,
+   "lng": 2.4,
+   "span": 11,
+   "botanical": "France",
+   "soil": "limestone",
+   "note": "AOC(원산지 통제 명칭) 제도의 나라. 와인 병의 이름이 품종보다 땅(아펠라시옹)을 먼저 말합니다."
+  },
+  {
+   "id": "bourgogne",
+   "name": "부르고뉴",
+   "rank": "S",
+   "domain": "origin",
+   "x": 900,
+   "y": 160,
+   "parents": [
+    {
+     "id": "fr",
+     "type": "s"
+    }
+   ],
+   "lat": 47.05,
+   "lng": 4.85,
+   "span": 1.6,
+   "botanical": "Bourgogne · Burgundy",
+   "soil": "limestone",
+   "note": "적포도는 거의 Pinot Noir, 청포도는 거의 Chardonnay. 같은 품종이 밭(클리마)마다 다른 와인이 된다는 생각이 가장 철저한 곳입니다.",
+   "facts": [
+    "주 품종 · Pinot Noir, Chardonnay",
+    "클리마 · 2015 유네스코 세계유산"
+   ]
+  },
+  {
+   "id": "cdn",
+   "name": "코트 드 뉘",
+   "rank": "V",
+   "domain": "origin",
+   "x": 520,
+   "y": 290,
+   "parents": [
+    {
+     "id": "bourgogne",
+     "type": "s"
+    }
+   ],
+   "lat": 47.18,
+   "lng": 4.96,
+   "span": 0.32,
+   "botanical": "Côte de Nuits",
+   "soil": "limestone",
+   "note": "디종 남쪽에서 뉘 생 조르주까지 이어지는 동향 사면. 부르고뉴 적포도 그랑 크뤼 대부분이 여기 있습니다.",
+   "facts": [
+    "동향 사면",
+    "쥐라기 석회암·이회토 (대략)",
+    "포도밭 해발 약 230–350m (대략)"
+   ]
+  },
+  {
+   "id": "cdb",
+   "name": "코트 드 본",
+   "rank": "V",
+   "domain": "origin",
+   "x": 1440,
+   "y": 290,
+   "parents": [
+    {
+     "id": "bourgogne",
+     "type": "s"
+    }
+   ],
+   "lat": 47.02,
+   "lng": 4.8,
+   "span": 0.4,
+   "botanical": "Côte de Beaune",
+   "soil": "limestone",
+   "note": "본 주변의 남쪽 사면. 화이트 그랑 크뤼와 가볍고 우아한 레드로 알려져 있습니다.",
+   "facts": [
+    "쥐라기 석회암·이회토 (대략)"
+   ]
+  },
+  {
+   "id": "gevrey",
+   "name": "제브레 샹베르탱",
+   "rank": "L",
+   "domain": "origin",
+   "x": 110,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdn",
+     "type": "s"
+    }
+   ],
+   "lat": 47.2265,
+   "lng": 4.9665,
+   "span": 0.05,
+   "botanical": "Gevrey-Chambertin",
+   "soil": "limestone",
+   "en": "Gevrey-Chambertin",
+   "note": "Gevrey-Chambertin 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "morey",
+   "name": "모레 생 드니",
+   "rank": "L",
+   "domain": "origin",
+   "x": 300,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdn",
+     "type": "s"
+    }
+   ],
+   "lat": 47.196,
+   "lng": 4.964,
+   "span": 0.05,
+   "botanical": "Morey-Saint-Denis",
+   "soil": "limestone",
+   "en": "Morey-Saint-Denis",
+   "note": "Morey-Saint-Denis 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "chambolle",
+   "name": "샹볼 뮈지니",
+   "rank": "L",
+   "domain": "origin",
+   "x": 470,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdn",
+     "type": "s"
+    }
+   ],
+   "lat": 47.185,
+   "lng": 4.9545,
+   "span": 0.05,
+   "botanical": "Chambolle-Musigny",
+   "soil": "limestone",
+   "en": "Chambolle-Musigny",
+   "note": "Chambolle-Musigny 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "vougeot",
+   "name": "부조",
+   "rank": "L",
+   "domain": "origin",
+   "x": 610,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdn",
+     "type": "s"
+    }
+   ],
+   "lat": 47.174,
+   "lng": 4.967,
+   "span": 0.05,
+   "botanical": "Vougeot",
+   "soil": "limestone",
+   "en": "Vougeot",
+   "note": "Vougeot 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "vosne",
+   "name": "본 로마네",
+   "rank": "L",
+   "domain": "origin",
+   "x": 800,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdn",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1595,
+   "lng": 4.9625,
+   "span": 0.05,
+   "botanical": "Vosne-Romanée",
+   "soil": "limestone",
+   "en": "Vosne-Romanée",
+   "note": "Vosne-Romanée 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "nuits",
+   "name": "뉘 생 조르주",
+   "rank": "L",
+   "domain": "origin",
+   "x": 1010,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdn",
+     "type": "s"
+    }
+   ],
+   "lat": 47.138,
+   "lng": 4.949,
+   "span": 0.05,
+   "botanical": "Nuits-Saint-Georges",
+   "soil": "limestone",
+   "en": "Nuits-Saint-Georges",
+   "note": "Nuits-Saint-Georges 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "corton",
+   "name": "코르통 언덕",
+   "rank": "L",
+   "domain": "origin",
+   "x": 1250,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdb",
+     "type": "s"
+    }
+   ],
+   "lat": 47.07,
+   "lng": 4.864,
+   "span": 0.05,
+   "botanical": "Aloxe-Corton · Pernand · Ladoix",
+   "soil": "limestone",
+   "en": "Aloxe-Corton · Pernand · Ladoix",
+   "note": "알록스 코르통·페르낭 베르즐레스·라두아 세르리니 세 마을에 걸친 언덕. 언덕 전체에 그랑 크뤼가 둘러 있습니다."
+  },
+  {
+   "id": "savigny",
+   "name": "사비니 레 본",
+   "rank": "L",
+   "domain": "origin",
+   "x": 1480,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdb",
+     "type": "s"
+    }
+   ],
+   "lat": 47.063,
+   "lng": 4.817,
+   "span": 0.05,
+   "botanical": "Savigny-lès-Beaune",
+   "soil": "limestone",
+   "en": "Savigny-lès-Beaune",
+   "note": "Savigny-lès-Beaune 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "volnay",
+   "name": "볼네",
+   "rank": "L",
+   "domain": "origin",
+   "x": 1700,
+   "y": 450,
+   "parents": [
+    {
+     "id": "cdb",
+     "type": "s"
+    }
+   ],
+   "lat": 46.999,
+   "lng": 4.765,
+   "span": 0.05,
+   "botanical": "Volnay",
+   "soil": "limestone",
+   "en": "Volnay",
+   "note": "Volnay 마을 아펠라시옹. 그랑 크뤼는 이 마을 안에 있지만 저마다 독립된 AOC입니다."
+  },
+  {
+   "id": "chambertin",
+   "name": "Chambertin",
+   "rank": "C",
+   "domain": "origin",
+   "x": 40,
+   "y": 620,
+   "parents": [
+    {
+     "id": "gevrey",
+     "type": "s"
+    }
+   ],
+   "lat": 47.2185,
+   "lng": 4.96,
+   "span": 0.018,
+   "ko": "샹베르탱",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 샹베르탱",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.5003,
+   "note": "Chambertin. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.5003ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "latricieres",
+   "name": "Latricières-Chambertin",
+   "rank": "C",
+   "domain": "origin",
+   "x": 140,
+   "y": 760,
+   "parents": [
+    {
+     "id": "gevrey",
+     "type": "s"
+    }
+   ],
+   "lat": 47.2162,
+   "lng": 4.9602,
+   "span": 0.018,
+   "ko": "라트리시에르 샹베르탱",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 라트리시에르 샹베르탱",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.5715,
+   "note": "Latricières-Chambertin. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.5715ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "combottes",
+   "name": "Aux Combottes",
+   "rank": "C",
+   "domain": "origin",
+   "x": 240,
+   "y": 620,
+   "parents": [
+    {
+     "id": "gevrey",
+     "type": "s"
+    }
+   ],
+   "lat": 47.2138,
+   "lng": 4.9632,
+   "span": 0.018,
+   "ko": "오 콩보트",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 오 콩보트",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 0.463,
+   "note": "Aux Combottes. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 0.463ha (Fine+Rare)",
+    "모레 생 드니와 맞닿은 제브레의 1er",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "clos-roche",
+   "name": "Clos de la Roche",
+   "rank": "C",
+   "domain": "origin",
+   "x": 340,
+   "y": 760,
+   "parents": [
+    {
+     "id": "morey",
+     "type": "s"
+    }
+   ],
+   "lat": 47.2075,
+   "lng": 4.96,
+   "span": 0.018,
+   "ko": "클로 드 라 로슈",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 클로 드 라 로슈",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.665,
+   "note": "Clos de la Roche. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.665ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "charmes",
+   "name": "Les Charmes",
+   "rank": "C",
+   "domain": "origin",
+   "x": 440,
+   "y": 620,
+   "parents": [
+    {
+     "id": "chambolle",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1845,
+   "lng": 4.96,
+   "span": 0.018,
+   "ko": "레 샤름",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 레 샤름",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 0.2294,
+   "note": "Les Charmes. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 0.2294ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "musigny",
+   "name": "Musigny",
+   "rank": "C",
+   "domain": "origin",
+   "x": 540,
+   "y": 760,
+   "parents": [
+    {
+     "id": "chambolle",
+     "type": "s"
+    }
+   ],
+   "lat": 47.179,
+   "lng": 4.9572,
+   "span": 0.018,
+   "ko": "뮈지니",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 뮈지니",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.27,
+   "note": "Musigny. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.27ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "clos-vougeot",
+   "name": "Clos de Vougeot",
+   "rank": "C",
+   "domain": "origin",
+   "x": 640,
+   "y": 620,
+   "parents": [
+    {
+     "id": "vougeot",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1745,
+   "lng": 4.9612,
+   "span": 0.018,
+   "ko": "클로 드 부조",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 클로 드 부조",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 1.9069,
+   "note": "Clos de Vougeot. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 1.9069ha (Fine+Rare)",
+    "약 50ha를 여러 생산자가 나눠 가진 밭",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "beaux-monts",
+   "name": "Les Beaux Monts",
+   "rank": "C",
+   "domain": "origin",
+   "x": 740,
+   "y": 760,
+   "parents": [
+    {
+     "id": "vosne",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1642,
+   "lng": 4.9542,
+   "span": 0.018,
+   "ko": "레 보 몽",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 레 보 몽",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 2.6113,
+   "note": "Les Beaux Monts. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 2.6113ha (Fine+Rare)",
+    "출처마다 다름 · 0.2563ha는 플라제 에셰조 쪽(Beaux Monts Bas) 구획이며 에셰조 그랑 크뤼 구역이라는 자료가 있음",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "brulees",
+   "name": "Aux Brûlées",
+   "rank": "C",
+   "domain": "origin",
+   "x": 840,
+   "y": 620,
+   "parents": [
+    {
+     "id": "vosne",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1612,
+   "lng": 4.9548,
+   "span": 0.018,
+   "ko": "오 브륄레",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 오 브륄레",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 0.2713,
+   "note": "Aux Brûlées. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 0.2713ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "richebourg",
+   "name": "Richebourg",
+   "rank": "C",
+   "domain": "origin",
+   "x": 940,
+   "y": 760,
+   "parents": [
+    {
+     "id": "vosne",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1618,
+   "lng": 4.9578,
+   "span": 0.018,
+   "ko": "리슈부르",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 리슈부르",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.7765,
+   "note": "Richebourg. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.7765ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "rsv",
+   "name": "Romanée-Saint-Vivant",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1040,
+   "y": 620,
+   "parents": [
+    {
+     "id": "vosne",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1604,
+   "lng": 4.9603,
+   "span": 0.018,
+   "ko": "로마네 생 비방",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 로마네 생 비방",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.9929,
+   "note": "Romanée-Saint-Vivant. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.9929ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "boudots",
+   "name": "Aux Boudots",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1080,
+   "y": 760,
+   "parents": [
+    {
+     "id": "nuits",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1522,
+   "lng": 4.9562,
+   "span": 0.018,
+   "ko": "오 부도",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 오 부도",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 1.1968,
+   "note": "Aux Boudots. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 1.1968ha (Fine+Rare)",
+    "본 로마네와 맞닿은 뉘 생 조르주 북쪽 끝",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "vignerondes",
+   "name": "Aux Vignerondes",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1150,
+   "y": 620,
+   "parents": [
+    {
+     "id": "nuits",
+     "type": "s"
+    }
+   ],
+   "lat": 47.1445,
+   "lng": 4.9515,
+   "span": 0.018,
+   "ko": "오 비뉴롱드",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 오 비뉴롱드",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 0.378,
+   "note": "Aux Vignerondes. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 0.378ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "corton-charlemagne",
+   "name": "Corton-Charlemagne",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1230,
+   "y": 760,
+   "parents": [
+    {
+     "id": "corton",
+     "type": "s"
+    }
+   ],
+   "lat": 47.0748,
+   "lng": 4.8545,
+   "span": 0.018,
+   "ko": "코르통 샤를마뉴",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 코르통 샤를마뉴",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "white",
+   "leroyHa": 0.4315,
+   "note": "Corton-Charlemagne. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.4315ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "renardes",
+   "name": "Corton · Les Renardes",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1330,
+   "y": 620,
+   "parents": [
+    {
+     "id": "corton",
+     "type": "s"
+    }
+   ],
+   "lat": 47.0762,
+   "lng": 4.87,
+   "span": 0.018,
+   "ko": "코르통 레 르나르드",
+   "approx": true,
+   "soil": "other",
+   "botanical": "그랑 크뤼 · 독립 AOC · 코르통 레 르나르드",
+   "grade": "그랑 크뤼 · 독립 AOC",
+   "color": "red",
+   "leroyHa": 0.5014,
+   "note": "Corton · Les Renardes. 그랑 크뤼 · 독립 AOC. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "그랑 크뤼 · 독립 AOC",
+    "Leroy 보유 0.5014ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "narbantons",
+   "name": "Les Narbantons",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1480,
+   "y": 760,
+   "parents": [
+    {
+     "id": "savigny",
+     "type": "s"
+    }
+   ],
+   "lat": 47.0565,
+   "lng": 4.829,
+   "span": 0.018,
+   "ko": "레 나르방통",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 레 나르방통",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 0.8102,
+   "note": "Les Narbantons. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 0.8102ha (Fine+Rare)",
+    "토양 · 확인 필요"
+   ]
+  },
+  {
+   "id": "santenots",
+   "name": "Santenots du Milieu",
+   "rank": "C",
+   "domain": "origin",
+   "x": 1700,
+   "y": 760,
+   "parents": [
+    {
+     "id": "volnay",
+     "type": "s"
+    }
+   ],
+   "lat": 46.987,
+   "lng": 4.756,
+   "span": 0.018,
+   "ko": "상트노 뒤 밀리외",
+   "approx": true,
+   "soil": "other",
+   "botanical": "프르미에 크뤼 · 상트노 뒤 밀리외",
+   "grade": "프르미에 크뤼",
+   "color": "red",
+   "leroyHa": 0.351,
+   "note": "Santenots du Milieu. 프르미에 크뤼. 위치는 지도 확인용 대략값이고, 이 밭의 토양·해발은 아직 확인하지 않았습니다.",
+   "facts": [
+    "프르미에 크뤼",
+    "Leroy 보유 0.351ha (Fine+Rare)",
+    "밭은 뫼르소 마을에 있지만 레드는 볼네 1er 크뤼로 표기",
+    "토양 · 확인 필요"
+   ]
+  }
+ ]
+}

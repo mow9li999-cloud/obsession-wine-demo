@@ -1,0 +1,1666 @@
+{
+ "version": "wine-1",
+ "updated": "2026-09-26",
+ "world": {
+  "x": 960,
+  "y": -20,
+  "w": 1600,
+  "h": 1560
+ },
+ "domains": {
+  "wine": {
+   "label": "Wine",
+   "genus": "vitis",
+   "region": "VITACEAE · VITIS",
+   "cx": 1760
+  }
+ },
+ "framing": "VIVC와 DNA 부모 분석 연구로 계보를 이었습니다. 확인 못 한 출처는 \"출처 확인 필요\", 추정은 점선.",
+ "nodes": [
+  {
+   "id": "vitis",
+   "name": "Vitis",
+   "ko": "포도속",
+   "rank": "G",
+   "domain": "wine",
+   "x": 1860,
+   "y": 70,
+   "note": "포도과(Vitaceae)의 속. 약 60–80종이 있지만 와인은 거의 전부 한 종, V. vinifera에서 나옵니다.",
+   "parents": [],
+   "italic": true,
+   "latin": "Vitis",
+   "family": "Vitaceae",
+   "src": {
+    "name": "Dong et al. 2023 · Science (두 번의 작물화)",
+    "url": "https://www.science.org/doi/10.1126/science.add8655"
+   }
+  },
+  {
+   "id": "sylvestris",
+   "name": "Wild grapevine",
+   "ko": "야생 포도",
+   "rank": "V",
+   "domain": "wine",
+   "x": 1640,
+   "y": 220,
+   "note": "유라시아 야생 포도. 암수딴그루이며 재배 포도의 조상입니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "short": "subsp. sylvestris",
+   "botanical": "<i>Vitis vinifera</i> subsp. <i>sylvestris</i>",
+   "src": {
+    "name": "Dong et al. 2023 · Science (두 번의 작물화)",
+    "url": "https://www.science.org/doi/10.1126/science.add8655"
+   }
+  },
+  {
+   "id": "vinifera",
+   "name": "V. vinifera",
+   "ko": "비니페라",
+   "rank": "S",
+   "domain": "wine",
+   "x": 1860,
+   "y": 330,
+   "note": "재배 포도의 종. 2023년 연구는 약 1만 1천 년 전 서아시아와 캅카스에서 두 번 따로 작물화됐다고 봅니다. 등록된 품종이 1만 개가 넘습니다.",
+   "parents": [
+    {
+     "id": "sylvestris",
+     "type": "s"
+    }
+   ],
+   "italic": true,
+   "latin": "Vitis vinifera",
+   "short": "V. vinifera",
+   "src": {
+    "name": "Dong et al. 2023 · Science (두 번의 작물화)",
+    "url": "https://www.science.org/doi/10.1126/science.add8655"
+   }
+  },
+  {
+   "id": "rotundifolia",
+   "name": "Muscadine",
+   "ko": "머스커딘",
+   "rank": "S",
+   "domain": "wine",
+   "x": 1400,
+   "y": 140,
+   "note": "미국 남동부. 염색체 수가 달라(2n=40) Muscadinia 속으로 따로 두기도 합니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "latin": "Vitis rotundifolia",
+   "short": "V. rotundifolia",
+   "italic": true,
+   "src": null
+  },
+  {
+   "id": "scuppernong",
+   "name": "Scuppernong",
+   "ko": "스커퍼농",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1360,
+   "y": 290,
+   "note": "노스캐롤라이나의 청동색 머스커딘. 미국에서 가장 먼저 재배된 포도 중 하나입니다.",
+   "parents": [
+    {
+     "id": "rotundifolia",
+     "type": "s"
+    }
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "amurensis",
+   "name": "V. amurensis",
+   "ko": "산머루",
+   "rank": "S",
+   "domain": "wine",
+   "x": 1550,
+   "y": 90,
+   "note": "동북아시아 원산. 한국의 산머루가 이 종입니다. 매우 추운 곳에서도 자랍니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "italic": true,
+   "latin": "Vitis amurensis",
+   "short": "V. amurensis",
+   "src": null
+  },
+  {
+   "id": "aestivalis",
+   "name": "V. aestivalis",
+   "ko": "에스티발리스",
+   "rank": "S",
+   "domain": "wine",
+   "x": 2060,
+   "y": 180,
+   "note": "미국 남동·중부의 여름 포도.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "italic": true,
+   "latin": "Vitis aestivalis",
+   "short": "V. aestivalis",
+   "src": null
+  },
+  {
+   "id": "labrusca",
+   "name": "Fox grape",
+   "ko": "라브루스카",
+   "rank": "S",
+   "domain": "wine",
+   "x": 2210,
+   "y": 170,
+   "note": "미국 북동부. 특유의 \"폭시(foxy)\" 향이 있습니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "latin": "Vitis labrusca",
+   "short": "V. labrusca",
+   "italic": true,
+   "src": null
+  },
+  {
+   "id": "riparia",
+   "name": "V. riparia",
+   "ko": "리파리아",
+   "rank": "S",
+   "domain": "wine",
+   "x": 2310,
+   "y": 290,
+   "note": "강가 포도. 내한성이 좋아 대목과 추운 지역 품종 교배의 바탕이 됩니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "italic": true,
+   "latin": "Vitis riparia",
+   "short": "V. riparia",
+   "src": null
+  },
+  {
+   "id": "rupestris",
+   "name": "V. rupestris",
+   "ko": "루페스트리스",
+   "rank": "S",
+   "domain": "wine",
+   "x": 2410,
+   "y": 160,
+   "note": "바위 포도. 필록세라 저항 대목의 부모입니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "italic": true,
+   "latin": "Vitis rupestris",
+   "short": "V. rupestris",
+   "src": null
+  },
+  {
+   "id": "berlandieri",
+   "name": "V. berlandieri",
+   "ko": "베를란디에리",
+   "rank": "S",
+   "domain": "wine",
+   "x": 2420,
+   "y": 380,
+   "note": "텍사스 석회질 토양 원산. 석회에 강해 유럽용 대목에 꼭 필요합니다.",
+   "parents": [
+    {
+     "id": "vitis",
+     "type": "c"
+    }
+   ],
+   "italic": true,
+   "latin": "Vitis berlandieri",
+   "short": "V. berlandieri",
+   "src": null
+  },
+  {
+   "id": "concord",
+   "name": "Concord",
+   "ko": "콩코드",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2220,
+   "y": 330,
+   "note": "1849년 매사추세츠. 포도 주스와 잼의 바로 그 맛.",
+   "parents": [
+    {
+     "id": "labrusca",
+     "type": "s"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "year": 1849,
+   "era": "c19",
+   "src": {
+    "name": "Wikipedia · Concord grape (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Concord_grape"
+   },
+   "yearLabel": "선발 1849"
+  },
+  {
+   "id": "norton",
+   "name": "Norton",
+   "ko": "노턴",
+   "rank": "H",
+   "domain": "wine",
+   "x": 2060,
+   "y": 330,
+   "note": "1820년대 버지니아. 미국 토착 적포도주 품종.",
+   "parents": [
+    {
+     "id": "aestivalis",
+     "type": "s"
+    }
+   ],
+   "botanical": "<i>Vitis aestivalis</i> 교잡 'Norton'",
+   "traits": {
+    "berry": "red"
+   },
+   "year": 1820,
+   "era": "c19",
+   "src": {
+    "name": "Wikipedia · Norton (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Norton_(grape)"
+   },
+   "yearLabel": "재배 기록 1820년대"
+  },
+  {
+   "id": "r110",
+   "name": "110 Richter",
+   "ko": "110 리히터",
+   "rank": "H",
+   "domain": "wine",
+   "x": 2410,
+   "y": 520,
+   "note": "1902년에 만든 대목. 19세기 필록세라 이후 유럽 포도는 대부분 미국 종 뿌리에 접붙여 자랍니다.",
+   "parents": [
+    {
+     "id": "berlandieri",
+     "type": "x"
+    },
+    {
+     "id": "rupestris",
+     "type": "x"
+    }
+   ],
+   "botanical": "<i>V. berlandieri</i> × <i>V. rupestris</i>",
+   "traits": {
+    "berry": "rootstock"
+   },
+   "year": 1902,
+   "era": "e20",
+   "src": {
+    "name": "Wikipedia · Richter 110 (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Richter_110"
+   },
+   "yearLabel": "교배 1902"
+  },
+  {
+   "id": "marquette",
+   "name": "Marquette",
+   "ko": "마르케트",
+   "rank": "H",
+   "domain": "wine",
+   "x": 2280,
+   "y": 470,
+   "note": "2006년 미네소타 대학. 여러 종이 섞인 교잡종으로 Pinot Noir의 손자뻘. 영하 30°C 아래에서도 삽니다.",
+   "parents": [
+    {
+     "id": "riparia",
+     "type": "s"
+    },
+    {
+     "id": "pinotnoir",
+     "type": "s"
+    }
+   ],
+   "botanical": "복합 교잡 (<i>V. riparia</i> × <i>V. vinifera</i> 외)",
+   "parentsText": "MN 1094 × Ravat 262 (Pinot Noir 손자뻘)",
+   "traits": {
+    "berry": "red"
+   },
+   "year": 2006,
+   "era": "c21",
+   "src": {
+    "name": "Wikipedia · Marquette (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Marquette_(grape)"
+   },
+   "yearLabel": "보급 2006"
+  },
+  {
+   "id": "muscat",
+   "name": "Muscat à Petits Grains",
+   "ko": "뮈스카",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2020,
+   "y": 450,
+   "note": "가장 오래된 품종 계열 중 하나. 수많은 Muscat의 조상입니다.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "botanical": "<i>Vitis vinifera</i> 'Muscat Blanc à Petits Grains'",
+   "synonyms": [
+    "Moscato Bianco",
+    "Muscat Blanc à Petits Grains"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "cinsault",
+   "name": "Cinsault",
+   "ko": "생소",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1470,
+   "y": 400,
+   "note": "남프랑스. 남아공에서는 Hermitage로 불렸습니다.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Cinsaut"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "pinotage",
+   "name": "Pinotage",
+   "ko": "피노타주",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1620,
+   "y": 430,
+   "note": "1925년 남아공 스텔렌보스 대학. Pinot Noir × Cinsault(\"Hermitage\").",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "x"
+    },
+    {
+     "id": "cinsault",
+     "type": "x"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "year": 1925,
+   "era": "e20",
+   "src": {
+    "name": "Wikipedia · Pinotage (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Pinotage"
+   },
+   "yearLabel": "교배 1925"
+  },
+  {
+   "id": "pinotnoir",
+   "name": "Pinot Noir",
+   "ko": "피노 누아",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1590,
+   "y": 570,
+   "note": "부르고뉴의 적포도. 돌연변이가 잦아 Pinot Gris, Pinot Blanc, Meunier가 모두 여기서 나왔습니다. VIVC는 부모를 '미상 × Savagnin Blanc'으로 적습니다(두 품종이 부모·자식 관계라는 점은 여러 연구가 같고, 방향은 추정).",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    },
+    {
+     "id": "savagnin",
+     "type": "k"
+    }
+   ],
+   "synonyms": [
+    "Spätburgunder",
+    "Pinot Nero"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "VIVC · Pinot Noir (9279)",
+    "url": "https://www.vivc.de/index.php?r=passport%2Fview&id=9279"
+   },
+   "parentsText": "미상 × Savagnin Blanc (VIVC · 방향 추정)"
+  },
+  {
+   "id": "pinotgris",
+   "name": "Pinot Gris",
+   "ko": "피노 그리",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1420,
+   "y": 530,
+   "note": "Pinot Noir의 과피색 돌연변이. 이탈리아의 Pinot Grigio.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "m"
+    }
+   ],
+   "synonyms": [
+    "Pinot Grigio",
+    "Grauburgunder"
+   ],
+   "traits": {
+    "berry": "grey"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "pinotblanc",
+   "name": "Pinot Blanc",
+   "ko": "피노 블랑",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1390,
+   "y": 650,
+   "note": "Pinot Gris에서 한 번 더 색이 빠진 돌연변이.",
+   "parents": [
+    {
+     "id": "pinotgris",
+     "type": "m"
+    }
+   ],
+   "synonyms": [
+    "Weissburgunder",
+    "Pinot Bianco"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "meunier",
+   "name": "Pinot Meunier",
+   "ko": "피노 뫼니에",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1490,
+   "y": 760,
+   "note": "잎 뒷면에 흰 솜털이 있는 Pinot 돌연변이. 샴페인의 3대 품종.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "m"
+    }
+   ],
+   "synonyms": [
+    "Schwarzriesling",
+    "Müllerrebe"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "gouais",
+   "name": "Gouais Blanc",
+   "ko": "구애 블랑",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1860,
+   "y": 560,
+   "note": "중세 유럽 농민들이 널리 심던 청포도. Pinot와 교배되어 Chardonnay, Gamay, Aligoté, Melon 등 여러 자손을 남겼습니다.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Heunisch"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers et al. 1999 · Science (Pinot × Gouais 자손)",
+    "url": "https://www.science.org/doi/10.1126/science.285.5433.1562"
+   }
+  },
+  {
+   "id": "chardonnay",
+   "name": "Chardonnay",
+   "ko": "샤르도네",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1680,
+   "y": 740,
+   "note": "Pinot × Gouais Blanc의 자손(1999 DNA 연구). 부르고뉴 화이트와 샹파뉴의 주 품종.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "x"
+    },
+    {
+     "id": "gouais",
+     "type": "x"
+    }
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers et al. 1999 · Science (Pinot × Gouais 자손)",
+    "url": "https://www.science.org/doi/10.1126/science.285.5433.1562"
+   }
+  },
+  {
+   "id": "gamay",
+   "name": "Gamay",
+   "ko": "가메",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1600,
+   "y": 870,
+   "note": "Pinot × Gouais Blanc의 자손(1999 DNA 연구). 보졸레의 품종.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "x"
+    },
+    {
+     "id": "gouais",
+     "type": "x"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers et al. 1999 · Science (Pinot × Gouais 자손)",
+    "url": "https://www.science.org/doi/10.1126/science.285.5433.1562"
+   }
+  },
+  {
+   "id": "aligote",
+   "name": "Aligoté",
+   "ko": "알리고테",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1750,
+   "y": 870,
+   "note": "Pinot × Gouais Blanc의 자손(1999 DNA 연구). 부르고뉴 알리고테 아펠라시옹의 품종.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "x"
+    },
+    {
+     "id": "gouais",
+     "type": "x"
+    }
+   ],
+   "synonyms": [
+    "Aligote"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers et al. 1999 · Science (Pinot × Gouais 자손)",
+    "url": "https://www.science.org/doi/10.1126/science.285.5433.1562"
+   }
+  },
+  {
+   "id": "melon",
+   "name": "Melon de Bourgogne",
+   "ko": "믈롱 드 부르고뉴",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1860,
+   "y": 790,
+   "note": "Pinot × Gouais Blanc의 자손(1999 DNA 연구). 루아르 뮈스카데의 품종.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "x"
+    },
+    {
+     "id": "gouais",
+     "type": "x"
+    }
+   ],
+   "synonyms": [
+    "Muscadet"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers et al. 1999 · Science (Pinot × Gouais 자손)",
+    "url": "https://www.science.org/doi/10.1126/science.285.5433.1562"
+   }
+  },
+  {
+   "id": "savagnin",
+   "name": "Savagnin",
+   "ko": "사바냥",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2090,
+   "y": 540,
+   "note": "쥐라. Traminer라고도 부르며, 여러 품종과 부모-자식으로 이어진 오래된 품종입니다.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Traminer"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "riesling",
+   "name": "Riesling",
+   "ko": "리슬링",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1970,
+   "y": 700,
+   "note": "Gouais Blanc × (Traminer 계통 × 야생 포도)로 보는 분석이 있습니다. 한쪽 부모는 추정.",
+   "parents": [
+    {
+     "id": "gouais",
+     "type": "x"
+    },
+    {
+     "id": "savagnin",
+     "type": "k"
+    }
+   ],
+   "parentsText": "Gouais Blanc × (Traminer 계통 × 야생 포도)",
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Wikipedia · Riesling (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Riesling"
+   }
+  },
+  {
+   "id": "muller",
+   "name": "Müller-Thurgau",
+   "ko": "뮐러투르가우",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1980,
+   "y": 880,
+   "note": "1882년 가이젠하임. Riesling × Madeleine Royale.",
+   "parents": [
+    {
+     "id": "riesling",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Riesling × Madeleine Royale",
+   "synonyms": [
+    "Rivaner"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "year": 1882,
+   "era": "c19",
+   "src": {
+    "name": "Wikipedia · Müller-Thurgau (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/M%C3%BCller-Thurgau"
+   },
+   "yearLabel": "교배 1882"
+  },
+  {
+   "id": "gewurz",
+   "name": "Gewürztraminer",
+   "ko": "게뷔르츠트라미너",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2250,
+   "y": 620,
+   "note": "Savagnin의 분홍 과피·강한 향 돌연변이. 리치, 장미.",
+   "parents": [
+    {
+     "id": "savagnin",
+     "type": "m"
+    }
+   ],
+   "synonyms": [
+    "Gewurztraminer"
+   ],
+   "traits": {
+    "berry": "grey"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "gruner",
+   "name": "Grüner Veltliner",
+   "ko": "그뤼너 펠트리너",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2210,
+   "y": 750,
+   "note": "오스트리아. Savagnin × St. Georgener-Rebe.",
+   "parents": [
+    {
+     "id": "savagnin",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Savagnin × St. Georgener-Rebe",
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Weinviertel DAC · Grüner Veltliner의 기원",
+    "url": "https://www.weinvierteldac.at/en/weinviertel-dac/origin-of-gruener-veltliner/"
+   }
+  },
+  {
+   "id": "chenin",
+   "name": "Chenin Blanc",
+   "ko": "슈냉 블랑",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2120,
+   "y": 850,
+   "note": "루아르. Savagnin의 자식으로 봅니다. Sauvignon Blanc과 반형제.",
+   "parents": [
+    {
+     "id": "savagnin",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Savagnin × 미상",
+   "synonyms": [
+    "Steen",
+    "Pineau de la Loire"
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Wikipedia · Chenin blanc (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Chenin_blanc"
+   }
+  },
+  {
+   "id": "sauvblanc",
+   "name": "Sauvignon Blanc",
+   "ko": "소비뇽 블랑",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2070,
+   "y": 970,
+   "note": "루아르·보르도. Savagnin이 부모로 추정됩니다.",
+   "parents": [
+    {
+     "id": "savagnin",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Savagnin × 미상",
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers & Meredith 1997 · Nature Genetics",
+    "url": "https://www.nature.com/articles/ng0597-84"
+   }
+  },
+  {
+   "id": "cabfranc",
+   "name": "Cabernet Franc",
+   "ko": "카베르네 프랑",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1860,
+   "y": 1000,
+   "note": "바스크 지방 기원으로 봅니다. 보르도 적포도 대부분의 부모.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Bouchet"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Bowers & Meredith 1997 · Nature Genetics",
+    "url": "https://www.nature.com/articles/ng0597-84"
+   }
+  },
+  {
+   "id": "cabsauv",
+   "name": "Cabernet Sauvignon",
+   "ko": "카베르네 소비뇽",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2030,
+   "y": 1090,
+   "note": "1997년 DNA 연구로 Cabernet Franc × Sauvignon Blanc의 자연 교잡임이 밝혀졌습니다.",
+   "parents": [
+    {
+     "id": "cabfranc",
+     "type": "x"
+    },
+    {
+     "id": "sauvblanc",
+     "type": "x"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "src": {
+    "name": "Bowers & Meredith 1997 · Nature Genetics",
+    "url": "https://www.nature.com/articles/ng0597-84"
+   }
+  },
+  {
+   "id": "magdeleine",
+   "name": "Magdeleine Noire",
+   "ko": "마들렌 누아르",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1660,
+   "y": 1040,
+   "note": "Merlot와 Malbec의 어미. 2009년 연구에서 브르타뉴·샤랑트의 몇 그루로 확인됐습니다.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "botanical": "<i>Vitis vinifera</i> 'Magdeleine Noire des Charentes'",
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Boursiquot et al. 2009 · AJGWR",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1755-0238.2008.00041.x"
+   }
+  },
+  {
+   "id": "merlot",
+   "name": "Merlot",
+   "ko": "메를로",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1770,
+   "y": 1150,
+   "note": "Cabernet Franc × Magdeleine Noire des Charentes. 2009년 연구가 '잃어버린 부모'를 찾았습니다.",
+   "parents": [
+    {
+     "id": "cabfranc",
+     "type": "x"
+    },
+    {
+     "id": "magdeleine",
+     "type": "x"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Boursiquot et al. 2009 · AJGWR",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1755-0238.2008.00041.x"
+   }
+  },
+  {
+   "id": "malbec",
+   "name": "Malbec",
+   "ko": "말벡",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1590,
+   "y": 1180,
+   "note": "Prunelard × Magdeleine Noire des Charentes (2009 연구). Merlot와 어미가 같습니다.",
+   "parents": [
+    {
+     "id": "magdeleine",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Prunelard × Magdeleine Noire",
+   "synonyms": [
+    "Côt",
+    "Cot"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Boursiquot et al. 2009 · AJGWR",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1755-0238.2008.00041.x"
+   }
+  },
+  {
+   "id": "carmenere",
+   "name": "Carménère",
+   "ko": "카르메네르",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1910,
+   "y": 1190,
+   "note": "Cabernet Franc × Gros Cabernet. 칠레에서 오랫동안 Merlot로 오인됐습니다.",
+   "parents": [
+    {
+     "id": "cabfranc",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Cabernet Franc × Gros Cabernet",
+   "synonyms": [
+    "Carmenere",
+    "Grande Vidure"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Wikipedia · Carménère (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Carm%C3%A9n%C3%A8re"
+   }
+  },
+  {
+   "id": "mondeuse",
+   "name": "Mondeuse Blanche",
+   "ko": "몽되즈 블랑슈",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2300,
+   "y": 950,
+   "note": "사부아의 희귀 백포도. Syrah의 어머니.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Vouillamoz & Grando 2006 · Heredity",
+    "url": "https://www.nature.com/articles/6800842"
+   }
+  },
+  {
+   "id": "dureza",
+   "name": "Dureza",
+   "ko": "뒤레자",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2400,
+   "y": 1060,
+   "note": "아르데슈의 희귀 적포도. Syrah의 아버지.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Vouillamoz & Grando 2006 · Heredity",
+    "url": "https://www.nature.com/articles/6800842"
+   }
+  },
+  {
+   "id": "syrah",
+   "name": "Syrah",
+   "ko": "시라",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2200,
+   "y": 1070,
+   "note": "Dureza × Mondeuse Blanche. 두 부모 모두 론·사부아 인근의 품종입니다.",
+   "parents": [
+    {
+     "id": "dureza",
+     "type": "x"
+    },
+    {
+     "id": "mondeuse",
+     "type": "x"
+    }
+   ],
+   "synonyms": [
+    "Shiraz"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Vouillamoz & Grando 2006 · Heredity",
+    "url": "https://www.nature.com/articles/6800842"
+   }
+  },
+  {
+   "id": "viognier",
+   "name": "Viognier",
+   "ko": "비오니에",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2410,
+   "y": 880,
+   "note": "Mondeuse Blanche와 가까운 관계로 추정됩니다(부모·자식이 아닌 '가까운 친척' 수준).",
+   "parents": [
+    {
+     "id": "mondeuse",
+     "type": "k"
+    }
+   ],
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Vouillamoz & Grando 2006 · Heredity",
+    "url": "https://www.nature.com/articles/6800842"
+   },
+   "parentsText": "Mondeuse Blanche의 가까운 친척 (추정)"
+  },
+  {
+   "id": "durif",
+   "name": "Petite Sirah",
+   "ko": "프티 시라",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2250,
+   "y": 1190,
+   "note": "Syrah × Peloursin. 1880년대 프랑스 Durif 박사가 보급했고, 캘리포니아에서는 Petite Sirah로 불립니다.",
+   "parents": [
+    {
+     "id": "syrah",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Syrah × Peloursin",
+   "synonyms": [
+    "Durif"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "year": 1880,
+   "era": "c19",
+   "src": {
+    "name": "Meredith et al. 1999 · AJEV",
+    "url": "https://www.ajevonline.org/content/50/3/236"
+   },
+   "yearLabel": "보급 1880년대"
+  },
+  {
+   "id": "grenache",
+   "name": "Grenache",
+   "ko": "그르나슈",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2400,
+   "y": 1230,
+   "note": "스페인 아라곤 기원으로 봅니다. 샤토뇌프뒤파프, 프리오라트. 스페인 이름 Garnacha.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Garnacha",
+    "Cannonau"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "mourvedre",
+   "name": "Mourvèdre",
+   "ko": "무르베드르",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2310,
+   "y": 1330,
+   "note": "스페인 이름 Monastrell. 방돌, 후미야.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Monastrell",
+    "Mataro"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "ciliegiolo",
+   "name": "Ciliegiolo",
+   "ko": "칠리에졸로",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1380,
+   "y": 1190,
+   "note": "Sangiovese와 부모·자식 관계. 방향은 출처마다 다름.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Vouillamoz et al. 2007 · VITIS",
+    "url": "https://ojs.openagrar.de/index.php/VITIS/article/view/4221"
+   }
+  },
+  {
+   "id": "sangiovese",
+   "name": "Sangiovese",
+   "ko": "산지오베제",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1480,
+   "y": 1310,
+   "note": "출처마다 다름. 2007년 연구는 Ciliegiolo × Calabrese di Montenuovo로 봤고, 2012년 연구는 오히려 Sangiovese가 Ciliegiolo의 부모라고 봅니다.",
+   "parents": [
+    {
+     "id": "ciliegiolo",
+     "type": "k"
+    }
+   ],
+   "parentsText": "Ciliegiolo × Calabrese di Montenuovo (출처마다 다름)",
+   "synonyms": [
+    "Brunello",
+    "Morellino",
+    "Prugnolo Gentile"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Vouillamoz et al. 2007 · VITIS",
+    "url": "https://ojs.openagrar.de/index.php/VITIS/article/view/4221"
+   }
+  },
+  {
+   "id": "nebbiolo",
+   "name": "Nebbiolo",
+   "ko": "네비올로",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1630,
+   "y": 1350,
+   "note": "피에몬테. 바롤로, 바르바레스코. 13세기 기록이 있습니다.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "synonyms": [
+    "Spanna",
+    "Chiavennasca"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": null
+  },
+  {
+   "id": "tempranillo",
+   "name": "Tempranillo",
+   "ko": "템프라니요",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1770,
+   "y": 1300,
+   "note": "2012년 연구로 Albillo Mayor × Benedicto의 자손임이 밝혀졌습니다.",
+   "parents": [
+    {
+     "id": "albillo",
+     "type": "x"
+    },
+    {
+     "id": "benedicto",
+     "type": "x"
+    }
+   ],
+   "synonyms": [
+    "Tinto Fino",
+    "Tinta Roriz",
+    "Aragonez"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Ibáñez et al. 2012 · AJEV",
+    "url": "https://www.ajevonline.org/content/63/4/549"
+   }
+  },
+  {
+   "id": "tribidrag",
+   "name": "Zinfandel / Primitivo",
+   "ko": "진판델 / 프리미티보",
+   "rank": "C",
+   "domain": "wine",
+   "x": 1940,
+   "y": 1330,
+   "note": "Zinfandel과 Primitivo는 같은 품종이며, 크로아티아 달마티아가 기원입니다. 옛 이름 Tribidrag, 현지명 Crljenak Kaštelanski.",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "botanical": "<i>Vitis vinifera</i> 'Tribidrag'",
+   "synonyms": [
+    "Zinfandel",
+    "Primitivo",
+    "Crljenak Kaštelanski"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Maletić et al. 2004 · AJEV",
+    "url": "https://www.ajevonline.org/content/55/2/174"
+   }
+  },
+  {
+   "id": "plavac",
+   "name": "Plavac Mali",
+   "ko": "플라바츠 말리",
+   "rank": "C",
+   "domain": "wine",
+   "x": 2100,
+   "y": 1400,
+   "note": "Zinfandel(Tribidrag) × Dobričić (2004 연구).",
+   "parents": [
+    {
+     "id": "tribidrag",
+     "type": "x"
+    }
+   ],
+   "parentsText": "Tribidrag × Dobričić",
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Maletić et al. 2004 · AJEV",
+    "url": "https://www.ajevonline.org/content/55/2/174"
+   }
+  },
+  {
+   "id": "pn-115",
+   "name": "Dijon 115",
+   "ko": "디종 115",
+   "rank": "T",
+   "domain": "wine",
+   "x": 1658,
+   "y": 542,
+   "note": "부르고뉴에서 1960–70년대에 선발한 Dijon 계열 클론. 향이 풍부하고 수확이 안정적입니다.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "t"
+    }
+   ],
+   "synonyms": [
+    "ENTAV 115",
+    "Clone 115"
+   ],
+   "src": null
+  },
+  {
+   "id": "pn-777",
+   "name": "Dijon 777",
+   "ko": "디종 777",
+   "rank": "T",
+   "domain": "wine",
+   "x": 1635,
+   "y": 629,
+   "note": "Dijon 계열 클론. 색이 짙고 구조감이 좋아 신대륙에서 많이 심습니다.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "t"
+    }
+   ],
+   "synonyms": [
+    "ENTAV 777",
+    "Clone 777"
+   ],
+   "src": null
+  },
+  {
+   "id": "pn-pommard",
+   "name": "Pommard",
+   "ko": "포마르",
+   "rank": "T",
+   "domain": "wine",
+   "x": 1545,
+   "y": 629,
+   "note": "부르고뉴 포마르에서 유래해 UC Davis에 보존된 클론.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "t"
+    }
+   ],
+   "synonyms": [
+    "UCD 4",
+    "UCD 5"
+   ],
+   "src": null
+  },
+  {
+   "id": "pn-wadenswil",
+   "name": "Wädenswil",
+   "ko": "베덴스빌",
+   "rank": "T",
+   "domain": "wine",
+   "x": 1522,
+   "y": 542,
+   "note": "스위스 베덴스빌 연구소에서 유래한 클론. 오리건 초기 재배의 주력이었습니다.",
+   "parents": [
+    {
+     "id": "pinotnoir",
+     "type": "t"
+    }
+   ],
+   "synonyms": [
+    "UCD 1A",
+    "Wadenswil"
+   ],
+   "src": null
+  },
+  {
+   "id": "ch-wente",
+   "name": "Wente",
+   "ko": "웬티",
+   "rank": "T",
+   "domain": "wine",
+   "x": 1748,
+   "y": 712,
+   "note": "캘리포니아 Wente 가문이 20세기 초에 들여온 계통. 캘리포니아 샤르도네 상당수의 뿌리입니다.",
+   "parents": [
+    {
+     "id": "chardonnay",
+     "type": "t"
+    }
+   ],
+   "src": null
+  },
+  {
+   "id": "ch-dijon95",
+   "name": "Dijon 95",
+   "ko": "디종 95",
+   "rank": "T",
+   "domain": "wine",
+   "x": 1612,
+   "y": 712,
+   "note": "Dijon 계열 샤르도네 클론.",
+   "parents": [
+    {
+     "id": "chardonnay",
+     "type": "t"
+    }
+   ],
+   "synonyms": [
+    "ENTAV 95",
+    "Clone 95"
+   ],
+   "src": null
+  },
+  {
+   "id": "cs-337",
+   "name": "Clone 337",
+   "ko": "클론 337",
+   "rank": "T",
+   "domain": "wine",
+   "x": 2030,
+   "y": 1164,
+   "note": "보르도에서 유래한 프랑스 클론. 송이가 작고 풍미가 진합니다.",
+   "parents": [
+    {
+     "id": "cabsauv",
+     "type": "t"
+    }
+   ],
+   "synonyms": [
+    "ENTAV 337"
+   ],
+   "src": null
+  },
+  {
+   "domain": "wine",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "id": "albillo",
+   "name": "Albillo Mayor",
+   "ko": "알비요 마요르",
+   "rank": "C",
+   "x": 1640,
+   "y": 1470,
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Ibáñez et al. 2012 · AJEV",
+    "url": "https://www.ajevonline.org/content/63/4/549"
+   },
+   "note": "스페인 중부의 청포도. Tempranillo의 부모 중 하나(2012 연구)."
+  },
+  {
+   "domain": "wine",
+   "parents": [
+    {
+     "id": "vinifera",
+     "type": "c"
+    }
+   ],
+   "id": "benedicto",
+   "name": "Benedicto",
+   "ko": "베네딕토",
+   "rank": "C",
+   "x": 1860,
+   "y": 1480,
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "Ibáñez et al. 2012 · AJEV",
+    "url": "https://www.ajevonline.org/content/63/4/549"
+   },
+   "note": "지금은 거의 재배되지 않는 스페인 적포도. Tempranillo의 다른 부모(2012 연구)."
+  },
+  {
+   "domain": "wine",
+   "parents": [
+    {
+     "id": "gouais",
+     "type": "x"
+    }
+   ],
+   "id": "blaufr",
+   "name": "Blaufränkisch",
+   "ko": "블라우프랭키시",
+   "rank": "C",
+   "x": 1180,
+   "y": 640,
+   "parentsText": "Gouais Blanc × Blaue Zimmettraube",
+   "synonyms": [
+    "Lemberger",
+    "Kékfrankos"
+   ],
+   "traits": {
+    "berry": "red"
+   },
+   "era": "old",
+   "src": {
+    "name": "'Blaue Zimmettraube' 연구 (2016)",
+    "url": "https://www.researchgate.net/publication/306322942_The_missing_link_'Blaue_Zimmettraube'_reveals_that_'Blauer_Portugieser'_and_'Blaufrankisch'_originated_in_Lower_Styria"
+   },
+   "note": "중부 유럽의 적포도. 2016년 연구에서 Gouais Blanc × Blaue Zimmettraube로 밝혀졌고, 슬로베니아 동부(Lower Styria) 기원으로 봅니다."
+  },
+  {
+   "domain": "wine",
+   "parents": [
+    {
+     "id": "blaufr",
+     "type": "x"
+    }
+   ],
+   "id": "zweigelt",
+   "name": "Zweigelt",
+   "ko": "츠바이겔트",
+   "rank": "C",
+   "x": 1040,
+   "y": 740,
+   "parentsText": "Blaufränkisch × St. Laurent",
+   "traits": {
+    "berry": "red"
+   },
+   "year": 1922,
+   "yearLabel": "교배 1922",
+   "era": "e20",
+   "src": {
+    "name": "Wikipedia · Zweigelt (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Zweigelt"
+   },
+   "note": "1922년 오스트리아 클로스터노이부르크에서 프리츠 츠바이겔트가 교배한 적포도."
+  },
+  {
+   "domain": "wine",
+   "parents": [
+    {
+     "id": "gouais",
+     "type": "x"
+    }
+   ],
+   "id": "furmint",
+   "name": "Furmint",
+   "ko": "푸르민트",
+   "rank": "C",
+   "x": 1220,
+   "y": 470,
+   "traits": {
+    "berry": "white"
+   },
+   "era": "old",
+   "src": {
+    "name": "Wikipedia · Furmint (2차 자료)",
+    "url": "https://en.wikipedia.org/wiki/Furmint"
+   },
+   "note": "헝가리 토카이의 주 품종. 귀부 와인과 드라이 와인을 모두 만듭니다. Gouais Blanc과 부모·자식 관계로 알려져 있습니다."
+  }
+ ]
+}
