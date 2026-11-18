@@ -3293,7 +3293,7 @@ window.WineEditorial=(()=>{
  const safeURL=value=>{try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:null;}catch(_){return null;}};
  function cleared(item){return item?.commercialReusePermitted===true&&Boolean(safeURL(item.licenseUrl));}
  function permitted(item){return Boolean(item)&&(manifest().usageMode==='demo-only'||cleared(item));}
- function sourcePath(item){return permitted(item)&&typeof item?.src==='string'&&/^assets\/editorial\/[a-zA-Z0-9._/-]+$/.test(item.src)&&!item.src.includes('..')?'/'+item.src:null;}
+ function sourcePath(item){return permitted(item)&&typeof item?.src==='string'&&/^assets\/editorial\/[a-zA-Z0-9._/-]+$/.test(item.src)&&!item.src.includes('..')?item.src:null;}
  function producer(p){return manifest().producers?.[typeof p==='string'?p:p?.id]||null;}
  function wine(w,mode){if(mode==='shot')return null;const entries=manifest().wines||{};const item=entries[w?.id]||(typeof wineDomain!=='undefined'?Object.entries(entries).find(([id])=>wineDomain.sameCuvee(w,id))?.[1]:null);if(!item)return null;const asset=mode==='label'?item.label:mode==='bottle'?(item.bottle||item):null;return asset&&sourcePath(asset)&&!(mode==='label'&&asset.type!=='label')?asset:null;}
  function image(item,{className='',lazy=true}={}){const src=sourcePath(item);if(!src)return null;const img=document.createElement('img');img.src=src;img.alt=item.alt||item.caption||'생산자 공개 자료 사진';img.className=className;img.loading=lazy?'lazy':'eager';img.decoding='async';if(item.width&&item.height){img.width=item.width;img.height=item.height;}img.dataset.editorial='true';return img;}
@@ -3433,7 +3433,7 @@ window.WineEditorial=(()=>{
   if (root) root.RegionalWineMap = api;
 })(typeof window !== 'undefined' ? window : null, function (root) {
   'use strict';
-  const vendor = '/maps/vendor/leaflet/';
+  const vendor = 'maps/vendor/leaflet/';
   let leafletReady;
   const boundaryCache = new Map();
   const boundaryClasses = Object.freeze({
@@ -3513,7 +3513,7 @@ window.WineEditorial=(()=>{
   function boundarySrc(src) {
     // Only project-owned GeoJSON paths. No remote fetches or encoded traversal.
     if (typeof src !== 'string' || !/^\/?assets\/geography\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_.-]+\.(?:geojson|json)$/.test(src) || src.includes('..')) return null;
-    return '/' + src.replace(/^\//, '');
+    return src.replace(/^\//, '');
   }
   function prepareBoundaries(json) {
     if (!json || json.type !== 'FeatureCollection' || !Array.isArray(json.features)) throw new Error('경계 자료 형식이 올바르지 않습니다.');
